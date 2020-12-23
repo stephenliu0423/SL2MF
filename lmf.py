@@ -105,7 +105,7 @@ class LMF:
             self.U -= vec_step_size * grad
             curr_log = self.compute_loss()
             delta_log = abs(curr_log-last_log)/abs(last_log)
-            print("iter:%s, curr_loss:%s, last_loss:%s, delta_loss:%s" % (t, curr_log, last_log, delta_log))
+            # print("iter:%s, curr_loss:%s, last_loss:%s, delta_loss:%s" % (t, curr_log, last_log, delta_log))
             if abs(delta_log) < 1e-5:
                 break
             last_log = curr_log
